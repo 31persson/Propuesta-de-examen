@@ -1,11 +1,13 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     printf("Triples pitagoricos que representan lados de un triangulo rectangulo:\n");
 
     for (int a = 1; a <= 20; a++) {
         for (int b = a + 1; b <= 20; b++) {
-            for (int c = b + 1; c <= 20; c++) {
+            int c = sqrt(a * a + b * b);
+            if (c <= 20) {
                 if (a * a + b * b == c * c) {
                     if ((a == 3 && b == 4 && c == 5) ||
                         (a == 6 && b == 8 && c == 10) ||
