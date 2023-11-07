@@ -4,7 +4,7 @@
 int main() {
     int a, b, c;
 
-    printf("Triples pitagoricos:\n");
+    printf("Triples pitagóricos:\n");
 
     if ((3 * 3 + 4 * 4) == (5 * 5)) {
         printf("- 3 - 4 - 5\n");
