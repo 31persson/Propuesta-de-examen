@@ -4,7 +4,7 @@
 int main() {
     int a, b, c;
 
-    printf("Triples pitagóricos:\n");
+    printf("Triples pitagoricos:\n");
 
     for (a = 1; a <= 20; a++) {
         for (b = a + 1; b <= 20; b++) {
