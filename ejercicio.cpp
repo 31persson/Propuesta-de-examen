@@ -2,21 +2,18 @@
 #include <math.h>
 
 int main() {
-    int a, b, c;
+    printf("Triples pitagoricos que representan lados de un triangulo rectangulo:\n");
 
-    printf("Triples pitagoricos:\n");
-
-    if ((3 * 3 + 4 * 4) == (5 * 5)) {
-        printf("- 3 - 4 - 5\n");
-    }
-    if ((6 * 6 + 8 * 8) == (10 * 10)) {
-        printf("- 6 - 8 - 10\n");
-    }
-    if ((5 * 5 + 12 * 12) == (13 * 13)) {
-        printf("- 5 - 12 - 13\n");
-    }
-    if ((8 * 8 + 15 * 15) == (17 * 17)) {
-        printf("- 8 - 15 - 17\n");
+    for (int a = 1; a <= 20; a++) {
+        for (int b = a + 1; b <= 20; b++) {
+            for (int c = b + 1; c <= 20; c++) {
+                if (a * a + b * b == c * c) {
+                    if ((a == 3 && b == 4 && c == 5) || (a == 6 && b == 8 && c == 10) || (a == 5 && b == 12 && c == 13) || (a == 8 && b == 15 && c == 17)) {
+                        printf("- %d - %d - %d\n", a, b, c);
+                    }
+                }
+            }
+        }
     }
 
     return 0;
