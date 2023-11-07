@@ -6,11 +6,11 @@ int main() {
 
     printf("Triples pitagóricos:\n");
 
-    for (a = 1; a <= 20; a++) { // Limitamos el rango para mejorar la eficiencia
+    for (a = 1; a <= 20; a++) {
         for (b = a + 1; b <= 20; b++) {
             c = sqrt(a * a + b * b);
 
-            if (c == (int)c && a + b + c <= 100) { // Verificar si c es un número entero y cumple con las condiciones de un triángulo
+            if (c == (int)c && a + b + c <= 100 && a*a + b*b == c*c) { // Verificar si c es un número entero y si es un triple pitagórico
                 printf("%d - %d - %d\n", a, b, c);
             }
         }
